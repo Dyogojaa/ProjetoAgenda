@@ -91,15 +91,18 @@ function Salvar()
 
 }
 
-function SalvarEmails() {
-    var email = $("#email").val();
+function SalvarEmail() {
+
+    debugger;
+
+    var email = $("#Email").val();
     var idContato = $("#idContato").val();
 
-    var url = "/Emails/Salvar";
+    var url = "/Emails/SalvarEmail";
 
     $.ajax({
         url: url
-        , data: { email: email, idContato: idContato }
+        , data: { Email: email, idContato: idContato }
         , type: "GET"
         , datatype: "html"
         , success: function (data) {

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ProjetoAgenda.Models.Telefone>
 
 <form class="form-horizontal">
-    <h3>Telefones</h3>
+    <h3>Lista de Telefones Cadastrados</h3>
     <hr />
         <div class="form-group">
             <label class="control-label col-md-2">Telefone</label>
@@ -25,7 +25,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.NumeroTelefone)
             </th>
-            <th>Editar</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -33,6 +33,7 @@
         {
             var linha = "tr" + item.Id;
 
+          
             <tr id="@linha">
                 <td>
                     @Html.DisplayFor(modelItem => item.NumeroTelefone)

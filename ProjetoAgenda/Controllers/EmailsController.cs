@@ -21,7 +21,7 @@ namespace ProjetoAgenda.Controllers
 
         }
 
-        public ActionResult SalvarEmails(string email, int idContato)
+        public ActionResult SalvarEmail(string email, int idContato)
         {
             var Email = new Email()
             {

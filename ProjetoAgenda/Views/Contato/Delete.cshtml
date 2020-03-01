@@ -1,12 +1,11 @@
 ﻿@model ProjetoAgenda.Models.Contato
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Apagar Contato";
 }
 
-<h2>Delete</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Tem certeza que deseja excluir o contato?</h3>
 <div>
     <h4>Contato</h4>
     <hr />
@@ -25,8 +24,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Apagar" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
         </div>
     }
 </div>
